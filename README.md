@@ -37,6 +37,7 @@ Upon completion, the script generates the following artifacts:
 | `price_with_anomalies.png` | Stock price chart with detected anomaly markers. |
 | `*.html` | Interactive versions of the above plots (if Plotly installed). |
 | **Console** | Forecast summaries with 50%, 78%, and 92% prediction intervals. |
+
 ⚠️ Disclaimer
 This project is for educational and research purposes only.
 Not financial advice.
