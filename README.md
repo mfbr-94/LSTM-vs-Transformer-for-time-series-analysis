@@ -19,7 +19,11 @@ Sequence Length: 30 trading days.
 Train/Test Split: 70% / 30% (chronological).
 Device: Auto-detects CUDA or CPU.
 
-
+| Model | Type | Mechanism | Objective |
+| :--- | :--- | :--- | :--- |
+| **LSTM Autoencoder** | Recurrent | Encoder compresses sequence to latent vector; Decoder reconstructs input. | Minimize Reconstruction Error |
+| **Transformer Autoencoder** | Attention | Self-attention captures global dependencies; MLP reconstructs input. | Minimize Reconstruction Error |
+| **Transformer Forecaster** | Attention | Encoder extracts context from final token; Linear head predicts future return. | Minimize Forecast MSE |
 
 🧠 Methodology
 Feature Engineering: Log returns, rolling volatility, momentum, volume z-scores, and drawdown.
